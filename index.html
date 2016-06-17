@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pig dice</title>
+    <title>Order pizza</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
@@ -10,34 +10,34 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <span id="dice-icons"></span>
-    <div class="row container">
-      <div class="col-md-6">
-        <h2 id="one-score"></h2>
-        <br>
-        <h2 id="two-score"></h2>
+    <div class="container">
+      <h1>What pizza do you want?</h1>
+      <form class="form-group" id="pizza">
+        <label for="size">Select a size</label>
+        <select id="size">
+          <option>12" pizza</option>
+          <option>16" pizza</option>
+          <option>18" pizza</option>
+          <option>20" pizza</option>
+        </select>
 
-      </div>
-      <div class="col-md-6">
-        <button type="button" id="roll" class="btn btn-lg">Roll!</button>
-        <button type="button" id="hold" class="btn btn-lg">Hold!</button>
-        <span id="current-die"></span>
+        <label for="toppings">Select your toppings</label>
+        <select id="toppings">
+            <option value="bacon">Bacon</option>
+            <option value="cbacon">Canadian bacon</option>
+            <option value="pineapple">Pineapple</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="sausage">Sausage</option>
+            <option value="bbq">BBQ chicken</option>
+            <option value="mushrooms">Mushrooms</option>
+            <option value="onions">Onions</option>
+            <option value="olives">Olives</option>
+        </select>
+        <button id="calculate" class="btn" type="submit" name="button">Calculate</button>
+      </form>
+      <div id="results">
+        <p>Your pizza size<span class="size"></span>your pizza toppings<span class="toppings"></span></p>
       </div>
     </div>
-    <div class="row container">
-      <div class="col-md-6 well">
-        <h2>Player Score!</h2>
-        <ul id="score-player1">
-
-        </ul>
-      </div>
-      <div class="col-md-6 well">
-        <h2>AI Score!</h2>
-        <ul id="score-player2">
-
-        </ul>
-      </div>
-    </div>
-
   </body>
 </html>

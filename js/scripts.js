@@ -32,17 +32,6 @@ Pizza.prototype.pizzaPrice = function() {
   this.psize + this.topping + this.topping2 + this.topping3;
 }
 
-// function resetFields() {
-//   $("#size").val("12");
-//   $(".toppings1").val("bacon");
-//   $(".toppings2").val("bacon");
-//   $(".toppings3").val("bacon");
-// }
-
-function resetForm() {
-  document.getElementByid("pizza").reset();
-}
-
 // User Interface/back end logic.
 $(document).ready(function() {
   $("form#pizza").submit(function(event) {

@@ -10,6 +10,39 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
+    <div id="carousel" class="container">
+    <div id="pizza-carousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="pizza-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="pizza-carousel" data-slide-to="1">
+        <li data-target="pizza-carousel" data-slide-to="2">
+        <li data-target="pizza-carousel" data-slide-to="3">
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="jumbotron">
+            <h1>GOOD PIZZA!</h1>
+            <p>Welcome to Good Pizza home of the Good Pizza, can i take your order?</p>
+          </div>
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="img/pizza-cat.gif" alt="pizza cat" />
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="img/og-pizza-cat.gif" alt="og pizza cat" />
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="img/pizza-wolf.gif" alt="pizza wold" />
+        </div>
+        <a href="#pizza-carousel" class="left carousel-control" data-slide="prev" role="button">
+          <span class="glyphicon glyphico-chevron-left"></span>
+        </a>
+        <a href="#pizza-carousel" class="right carousel-control" data-slide="next" role="button">
+          <span class="glyphicon glyphico-chevron-right"></span>
+        </a>
+     </div>
+   </div>
+ </div>
     <div class="container">
       <h1>What pizza do you want?</h1>
       <form class="form-group" id="pizza">

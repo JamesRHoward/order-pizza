@@ -14,7 +14,7 @@ Pizza.prototype.toppingPrice = function() {
   } if (this.topping3 === "bacon" || this.topping3 === "canadian-bacon" || this.topping3 === "pepperoni" || this.topping3 === "bbq3" || this.topping3 === "sausage") {
     this.price +=1;
   }
-  return this.price
+  return this.price;
 }
 
 Pizza.prototype.sizePrice = function() {
@@ -30,6 +30,17 @@ Pizza.prototype.sizePrice = function() {
 
 Pizza.prototype.pizzaPrice = function() {
   this.psize + this.topping + this.topping2 + this.topping3;
+}
+
+// function resetFields() {
+//   $("#size").val("12");
+//   $(".toppings1").val("bacon");
+//   $(".toppings2").val("bacon");
+//   $(".toppings3").val("bacon");
+// }
+
+function resetForm() {
+  document.getElementByid("pizza").reset();
 }
 
 // User Interface/back end logic.
